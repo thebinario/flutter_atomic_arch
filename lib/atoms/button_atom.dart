@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class ButtonAtom extends StatelessWidget {
+class AtomButton extends StatelessWidget {
   final String label;
   final VoidCallback onPressed; // Função chamada ao pressionar
   final Color? backgroundColor; // Cor de fundo (opcional)
   final TextStyle? labelStyle; // Estilo do texto (opcional)
 
-  const ButtonAtom({
+  const AtomButton({
     Key? key,
     required this.label,
     required this.onPressed,

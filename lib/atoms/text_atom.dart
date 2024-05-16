@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class AtomText extends StatelessWidget {
+class AtomText extends Text {
   final String text;
   final TextStyle? style;
 
-  const AtomText(this.text, {Key? key, this.style}) : super(key: key);
+  const AtomText(this.text, {Key? key, this.style}) : super('');
 
   @override
   Widget build(BuildContext context) {

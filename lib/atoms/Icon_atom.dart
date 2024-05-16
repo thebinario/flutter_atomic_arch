@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AtomIcon extends StatelessWidget {
+class AtomIcon extends Icon {
   final IconData icon;
   final double size;
   final Color color;
@@ -10,14 +10,16 @@ class AtomIcon extends StatelessWidget {
     required this.icon,
     this.size = 24.0, // Tamanho padrão
     this.color = Colors.black, // Cor padrão
-  }) : super(key: key);
+  }) : super(null);
 
   @override
   Widget build(BuildContext context) {
-    return Icon(
-      icon,
-      size: size,
-      color: color,
+    return Center(
+      child: Icon(
+        icon,
+        size: size,
+        color: color,
+      ),
     );
   }
 }
